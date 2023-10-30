@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book now</title>
+    <link rel="stylesheet" href="booknow.css">
+</head>
+
+<body>
+
+    <form action="data.html" method="get">
+        <fieldset>
+            <legend>
+                <h1>BOOK A ROOM FORM</h1>
+            </legend>
+            <label class="l">First Name</label>
+            <input type="text" name="fname" class="i" placeholder="Enter Your First Name" required ><br><br>
+            <label class="l">Last Name</label>
+            <input type="text" name="lname" class="i" placeholder="Enter Your Last Name"><br><br>
+            <label class="l">Email</label>
+            <input type="email" name="email" class="i" placeholder="Enter Your Email"><br><br>
+            <label class="l">Phone Number</label>
+            <input type="tel" name="PN" class="i" placeholder="Enter Your Phone Number" required><br><br>
+            <label class="l">Number Of Room Requested</label>
+            <input type="number" name="NR" class="i" placeholder="Enter The Number Of Rooms You Need"><br><br>
+            <label class="l">Date Of Arrival</label>
+            <input type="date" name="DA" class="i" placeholder="Enter The Date Of Arrival"><br><br>
+            <label class="l">Date Of Departure</label>
+            <input type="date" name="DD" class="i" required><br><br>
+            <label class="l" id="type">Room Type:</label><br><br>
+            <div class="radio">
+            <input type="radio" name="room type" value="Single" id="id1">
+            <label for="id1" >Single-$300 per day</label><br><br>
+            <input type="radio" name="room type" value="Deluxe" id="id2" >
+            <label for="id2" >Deluxe-$500 per day</label><br><br>
+            <input type="radio" name="room type" value="Suite" id="id3" >
+            <label for="id3" >Suite-$800 per day</label><br><br>
+            <input type="radio" name="room type" value="Presidential Suite" id="id4" >
+            <label for="id4" >Presidential Suite-$1200 per day</label><br><br>
+            </div>
+            <label class="c">Comments</label>
+            <textarea cols="30" rows="15"></textarea><br><br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
